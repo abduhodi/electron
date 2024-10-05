@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Dialogs with Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainPage">
+        <h1>File Dialogs with Input</h1>
+        <button id="readBtn">Read</button>
+        <button id="writeBtn">Write</button>
+    </div>
+
+    <div id="writeSection" style="display: none;">
+        <button id="openFile">Open File</button>
+        <span id="openFileResult" style="margin-left: 10px; color: green;"></span> <!-- This will display the result -->
+        <textarea id="writeLogs" rows="10" cols="80" placeholder="Logs..." readonly></textarea>
+        <button id="clearWriteLog" style="display: block;">Clear logs</button>
+        <input type="text" id="portInputWrite" placeholder="COM8">
+        <button id="writeFile">WRITE</button>
+        <button id="backToMainFromWrite">Back</button>
+    </div>
+
+    <div id="readSection" style="display: none;">
+        <button id="saveFile">Save File</button>
+        <span id="saveFileResult" style="margin-left: 10px; color: green;"></span> <!-- This will display the result -->
+        <textarea id="readLogs" rows="10" cols="80" placeholder="Logs..." readonly></textarea>
+        <button id="clearReadLog" style="display: block;">Clear logs</button>
+        <input type="text" id="portInputRead" placeholder="COM8">
+        <button id="readFile">READ</button>
+        <button id="backToMainFromRead">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
